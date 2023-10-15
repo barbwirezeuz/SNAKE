@@ -1,4 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const board = document.getElementById("game-board");
+    const scoreDisplay = document.getElementById("score");
+    const gameOverScreen = document.getElementById("game-over");
+    const gameOverText = document.getElementById("game-over-text");
+    const restartButton = document.getElementById("restart-button");
+
     const upButton = document.getElementById("up-button");
     const downButton = document.getElementById("down-button");
     const leftButton = document.getElementById("left-button");
