@@ -5,6 +5,27 @@ document.addEventListener("DOMContentLoaded", () => {
     const gameOverText = document.getElementById("game-over-text");
     const restartButton = document.getElementById("restart-button");
 
+    const upButton = document.getElementById("up-button");
+    const downButton = document.getElementById("down-button");
+    const leftButton = document.getElementById("left-button");
+    const rightButton = document.getElementById("right-button");
+
+    upButton.addEventListener("touchstart", () => {
+        if (direction !== "down") direction = "up";
+    });
+
+    downButton.addEventListener("touchstart", () => {
+        if (direction !== "up") direction = "down";
+    });
+
+    leftButton.addEventListener("touchstart", () => {
+        if (direction !== "right") direction = "left";
+    });
+
+    rightButton.addEventListener("touchstart", () => {
+        if (direction !== "left") direction = "right";
+    });
+
     const gridSize = 20;
     const cellSize = 25;
     let snake = [{ x: 10, y: 10 }];
