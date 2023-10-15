@@ -66,6 +66,15 @@ body {
     cursor: pointer;
 }
 
+/* Add styling for the control buttons */
+.control-button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin: 5px;
+}
+
+
 footer {
     font-family: 'Ubuntu Condensed', sans-serif;
 }
