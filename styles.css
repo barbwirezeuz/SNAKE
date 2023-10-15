@@ -5,19 +5,23 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: 'Ubuntu Condensed', sans-serif;
+    overflow: hidden;
 }
 
 #game-board {
     display: grid;
-    grid-template-columns: repeat(20, 25px);
+    grid-template-columns: repeat(20, 5vw); /* Adjust the width of the cells to be relative to the viewport width */
     gap: 1px;
-    border: 1px solid #ddd;  /* Add a border to visually separate cells */
+    border: 1px solid #ddd;
+    max-width: 500px; /* Set a maximum width for the game board */
+    margin: 0 auto; /* Center the game board on the screen */
 }
+
 
 .cell {
     width: 25px;
     height: 25px;
-    border: none;  /* Remove the border */
+    border: none;  
     box-sizing: border-box;  /* Include padding and border in the element's total width and height */
 }
 
